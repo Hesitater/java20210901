@@ -1,6 +1,6 @@
 package p01review;
 
-public class c01Type {
+public class C01Type {
 	public static void main(String[] args) {
 		
 		//데이터 타입
@@ -21,13 +21,13 @@ public class c01Type {
 		// 2. 참조타입( reference type)
 		// 기본타입 8개 제외 나머지 모두가 참조타입
 		
-		int[] arr = {3, 4}; 		//8520
+		int[] arr = {3, 4}; 		//8520따로존재
 		int[] brr = arr;			//8520
 		
 		
 		brr[0] = 33;
 		
-		System.out.println(arr[0]);
+		System.out.println(arr[0]);  //  arr[0]의값 33이나옴
 		
 		
 		
