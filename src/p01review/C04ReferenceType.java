@@ -1,15 +1,22 @@
 package p01review;
 
 public class C04ReferenceType {
+	// 1.상위 타입으로 자동 변환(깂 할당)
 	public static void main(String[] args) {
 		
 
 		Tesla t1 = new Tesla();
+		Audi a1 = new Audi();
 		Car c1 = t1;
 		
 		
 		c1.setSpeed(100);
 		System.out.println(t1.getSpeed());
+		
+		t1.autoControl();
+//		c1.autoControl();
+		
+		
 		
 		
 	}
@@ -31,4 +38,17 @@ class Car {
 
 class Tesla extends Car {
 	
+	public void autoControl() {
+		
+		System.out.println("자동운전");
+	}
+	
 }
+
+class Audi extends Car {
+	
+	
+}
+
+
+
